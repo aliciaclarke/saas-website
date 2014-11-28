@@ -108,8 +108,8 @@ html {
 
 
 .nav li {
-  display:block;
-  text-align: center;
+  display:inline-block;
+  text-align: left;
 }
 
 @media only screen and (min-width: 25em) {
