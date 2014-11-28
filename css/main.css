@@ -49,6 +49,37 @@ body {
   padding: 0;
 }
 
+a:link,
+a:active {
+  /* it is ok to get rid of focus rectangle for mouse users BUT NEVER REMOVE IT FOR KEYBOARD USERS! */
+  outline: none;
+}
+
+a:focus {
+  outline: 3px solid #000;
+}
+
+.skip-links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.skip-links a {
+  position: absolute;
+  top: -3em;
+  padding: 0.5em 0.75em;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.25em;
+  text-decoration: none;
+  }
+
+.skip-links a:focus {
+  top: 0;
+}
+
 .title {
   margin: 0;
   display: block;
@@ -93,6 +124,18 @@ header {
     color: white;
   }
 
+.sign {
+  float: right;
+  clear: right;
+  width: 53%;
+  text-decoration: none;
+  font-size: 2.5rem;
+  background-color:black;
+  color: white;
+
+}
+
+
 .blue {
   background-color: #33ccff;
 }
@@ -102,44 +145,37 @@ header {
 
   }
 
+.why{
+  text-align: center;
+}
+
 .icon-names{
   text-align: center;
   margin: 0;
   padding: 0:;
 }
 
-.need {
-  text-align: center;
-}
-
 .icon {
   display: block;
+  margin: 0 0 0 5%;
+  padding:0;
 }
 
-.bottom {
-  background-image:url("../images/snowboard1-2.jpg");
-  background-size: 150%;
-  background-repeat:no-repeat;
-  background-position:top center;
-  overflow: hidden;
-  margin:0;
-  width: 100%;
+.icon-para {
+  display: block;
+  text-align: left;
+  margin: 1rem 1rem 2rem 2rem;
+  padding: 0;
 }
+
 
 .para-bottom { 
-    margin:10rem 0 0;
-    font-size:1.5rem;
-    text-align:center;
-    background-color:rgba(0 ,0 ,0, .5);
-    color: white;
+    overflow: hidden;
+    font-size:1rem;
+    text-align:left;
+    background-color: #33ccff;
+    color: black;
   }
-
-
-
-
-
-
-
 
 footer {
   background-color: black;
