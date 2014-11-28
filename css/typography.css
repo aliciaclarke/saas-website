@@ -9,7 +9,7 @@ html {
   padding: 0;
   box-sizing: border-box;
 
-  font: normal 100%/1.5 "Merriweather", sans-serif;
+  font-family: 'Raleway', sans-serif;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -162,5 +162,5 @@ sub {
 }
 h1, h2, h3, h4, h5, h6,
 .brand-family {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Raleway', sans-serif;
   }

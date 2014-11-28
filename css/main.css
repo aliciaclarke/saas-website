@@ -74,16 +74,44 @@ header {
   overflow: hidden;
 }
 
-.image { 
-   width: 100%;
-   overflow: hidden;
-   margin: 0;
-   padding: 0;
+.best{
+    background-image:url("../images/snowboard1.jpg");
+    background-size: 25rem;
+    background-repeat:no-repeat;
+    background-position:top center;
+    overflow: hidden;
+    margin:0;
+    width: 100%;
 }
+
+ .headline { 
+    margin:5rem 0;
+    font-size:3rem;
+    text-align:center;
+    background-color:rgba(0 ,0 ,0, .3);
+    color: white;
+  }
 
 .need {
   text-align: center;
 }
+
+hr {
+    margin: 0rem 8%;
+}
+
+.calories {
+  display: block;
+  margin: 0 0 0 5.5rem;
+}
+
+
+
+
+
+
+
+
 
 footer {
   background-color: black;
