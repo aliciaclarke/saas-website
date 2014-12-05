@@ -106,12 +106,6 @@ html {
   visibility: visible;
 }
 
-
-.nav li {
-  display:inline-block;
-  text-align: left;
-}
-
 @media only screen and (min-width: 25em) {
 
 
@@ -162,11 +156,6 @@ html {
 }
 
 @media only screen and (min-width: 38em) {
-.nav li {
-  display: inline-block;
-  text-align: center;
-}
-
 .unit-m-hidden {
   display: none;
   visibility: hidden;
@@ -230,10 +219,6 @@ html {
 }
 
 @media only screen and (min-width: 60em) {
-
-.nav {
-  float: left;
-}
 
 .unit-l-hidden {
   display: none;

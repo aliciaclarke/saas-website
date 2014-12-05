@@ -80,58 +80,54 @@ a:focus {
   top: 0;
 }
 
-.title {
-  margin: 0;
-  display: block;
-  text-align: left;
-  color: white;
-
-}
-
-.nav {
-  margin: 0.2 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.nav a {
-  display: block;
-  text-decoration: none;
-  color: white;
-  text-align: left;
-}
-
-header {
-  background-color: black;
+.masthead {
   overflow: hidden;
+
+  background-color: black;
 }
 
-.best{
-    background-image:url("../images/snowboardgreen1.jpg");
-    background-size: 150%;
-    background-repeat:no-repeat;
-    background-position:top center;
-    overflow: hidden;
-    margin:0;
+.nav a,
+.nav a:link,
+.nav a:visited {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active
+.nav .nav-current,
+.nav .nav-current:link,
+.nav .nav-current:visited {
+    color: #33ccff;
+}
+
+.logo {
+  display: block;
+}
+
+.image{
+    display: inline-block;
     width: 100%;
 }
 
 .headline { 
-    margin:7rem 0;
-    font-size:2rem;
-    text-align:center;
-    background-color:rgba(0 ,0 ,0, .5);
-    color: white;
+    position: absolute;
+    top: 500px;
+    left: 400px;
+    width: 100%;
+
   }
 
 .sign {
   float: right;
   clear: right;
-  width: 53%;
+  width: 100%;
   text-decoration: none;
   font-size: 2.5rem;
-  background-color:black;
-  color: white;
+  color: black;
+  text-align: center;
 
 }
 
@@ -151,21 +147,21 @@ header {
 
 .icon-names{
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 0:;
 }
 
 .icon {
   display: block;
-  margin: 0 0 0 5%;
+  margin: 0 auto;
   padding:0;
 }
 
 .icon-para {
-  display: block;
-  text-align: left;
-  margin: 1rem 1rem 2rem 2rem;
-  padding: 0;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5%;
 }
 
 
@@ -182,6 +178,70 @@ footer {
   color: white;
   overflow: hidden;
 }
+
+.pricing{
+  text-align: center;
+  background-color:#33ccff; 
+  width: 100%;
+  overflow:hidden;
+}
+
+.plan-2 {
+  text-decoration: none;
+  background-color: #33ccff;
+}
+.plan-blue {
+  background-color: #AEEAFF;
+}
+
+@media only screen and (min-width: 25em) {
+
+.nav {
+    text-align: center;
+  }
+
+.nav li {
+    display: inline-block;
+  }
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.plan-2 {
+  display: block;
+  width: 100%;
+}
+
+.plan-blue {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+@media only screen and (min-width: 38em) {
+
+.nav {
+    float: left;
+  }
+.logo {
+  display: inline-block;
+}
+
+.plan-2 {
+  display:inline-block;
+  width: 33%;
+}
+
+.plan-blue {
+  display: inline-block;
+  width: 33%;
+}
+
+@media only screen and (min-width: 60em) {
+
 
 
 
