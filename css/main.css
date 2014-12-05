@@ -82,16 +82,16 @@ a:focus {
 
 .masthead {
   overflow: hidden;
-
   background-color: black;
 }
 
 .nav a,
 .nav a:link,
 .nav a:visited {
-  display: block;
   color: white;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav a:hover,
@@ -105,44 +105,73 @@ a:focus {
 
 .logo {
   display: block;
-  width: 20%
+  margin: 0;
+  padding: 0;
 }
 
 .image{
-    display: inline-block;
+    position: relative;
     width: 100%;
+    opacity: 0.6;
+}
+
+.image:hover {
+  opacity: 1.0;
 }
 
 .action {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 0;
   padding: 0 3%;
+  position:relative;
+  top: -200px;
+  color: black;
+  text-align: center;
 }
 
 .headline { 
     position:relative;
+    top: -190px;
+    width: 100%;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0 3%;
+    overflow: hidden;
+    background-color: rgba(51,204,255,0.5);
+    color: black;
+    text-align: center;
+}
+
+.bill-p {
+  position:relative;
+    top: -190px;
+    width: 100%;
     font-size: 1rem;
     margin: 0;
     padding: 0 3%;
     overflow: hidden;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(51,204,255,0.5);
+    color: black;
+    text-align: center;
+
 }
 
 .sign {
- display: inline-block;
- padding:3%;
+ position:relative;
+ top: -220px;
+ float:right;
+ padding:1.5%;
  margin:0;
  border-radius: .2em;
  text-decoration: none;
  font-size: 1.5rem;
-
- border:6px solid currentColor;
+ background-color: rgba(51,204,255,0.6);
  color: black;
 
 }
 
 .sign:hover {
-  color: #33ccff;
+  color: white;
 }
 
 
@@ -157,6 +186,8 @@ a:focus {
 
 .why{
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .icon-names{
@@ -245,28 +276,27 @@ footer {
 
 @media only screen and (min-width: 25em) {
 
-.nav {
-    text-align: center;
-  }
-
 .nav li {
-    display: inline-block;
+    display: block;
+    text-align: center;
   }
 
 .logo {
   display: block;
-  margin: 0 auto;
+  margin:0 auto;
 }
 
 
 @media only screen and (min-width: 38em) {
 
-.nav {
-    float: left;
-  }
 .logo {
   display: inline-block;
 }
+
+.nav li {
+    display: inline-block;
+    
+  }
 
 
 @media only screen and (min-width: 60em) {
